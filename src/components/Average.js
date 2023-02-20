@@ -1,7 +1,7 @@
 import React from "react"
 import Sort from "./Sort"
 import Chart from "./Chart"
-import "../styling/globals.css"
+import "../styling/style.css"
 import useDashBoard from "./useDashBoard"
 import { StudentSwitch } from "./StudentSwitch"
 

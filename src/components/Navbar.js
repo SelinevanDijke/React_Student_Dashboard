@@ -1,5 +1,5 @@
 import React from "react"
-import "../styling/globals.css"
+import "../styling/style.css"
 import { NavItem } from "./NavItem"
 import useDashBoard from "./useDashBoard"
 import { NavLink } from "react-router-dom"

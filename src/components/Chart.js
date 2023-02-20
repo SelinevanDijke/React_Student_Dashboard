@@ -1,5 +1,5 @@
 import React from "react"
-import "../styling/globals.css"
+import "../styling/style.css"
 
 import {
 	VictoryBar,
