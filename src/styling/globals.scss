@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+@import "./assignment";
+@import "./average";
+@import "./chart";
+@import "./footer";
+@import "./header";
+@import "./navbar";
+@import "./sort";
+@import "./student";
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 100vw;
+	font-family: "Yanone Kaffeesatz", sans-serif !important;
+	color: rgb(34, 50, 67);
+}
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: #030000;
+	border-radius: 15px;
+	box-shadow: inset 7px 7px 12px #e8e8e8;
+}
+::-webkit-scrollbar-thumb:hover {
+	// background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+}
+::-webkit-scrollbar-track {
+	background: #ffffff;
+	border-radius: 15px;
+	box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+.App {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+		"h h h h"
+		"n n n n"
+		"m m m m"
+		"f f f f";
+}
+
+@media (min-width: 1028px) {
+	.App {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 250px repeat(3, 1fr);
+		grid-template-rows: auto auto 1fr;
+		grid-template-areas:
+			"h h h h "
+			"n m m m "
+			"f m m m ";
+	}
+}
